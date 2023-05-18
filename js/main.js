@@ -19,4 +19,4 @@ let elSelector = document.getElementById('app');
 
 console.log(elSelector);
 
-elSelector.innerHTML += `<img src="{{ img }}" alt="ciao"> `;
+elSelector.innerHTML += `<img v-bind:src="this.img" alt="ciao">`;
